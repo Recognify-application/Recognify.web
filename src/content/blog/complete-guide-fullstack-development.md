@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "First blog, project and developments"
+title: "First post, future project and developments"
 snippet: "Recognify"
 image: {
     src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
