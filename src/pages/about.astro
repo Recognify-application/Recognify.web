@@ -15,16 +15,76 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   <Container>
     <Sectionhead>
       <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">The journey started in September 2024, when three ongoing projects from the University of Padua, Radboud University, and Tilburg University, each focused on mental health chatbots using large language models (LLMs), merged. Our team is diverse and multidisciplinary, with enthusiasts from various fields including AI, cognitive computing, cognitive neuroscience, and behavioral science. </Fragment>
+      <Fragment slot="desc"></Fragment>
     </Sectionhead>
+
+    <div class="flex flex-col gap-6 mx-auto max-w-4xl mt-8">
+      
+      <h2 class="font-bold text-3xl text-gray-800">
+        About Recognify
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Recognify was born from the merger of three pioneering initiatives, each dedicated to enhancing psychological well-being and quality of life through digital solutions. These projects originated from the <strong>University of Padua (Italy), Radboud University (the Netherlands), and Tilburg University (the Netherlands)</strong>, each addressing a unique aspect of mental health and personal development.
+      </p>
+
+      <h2 class="font-bold text-3xl text-gray-800">
+        The Origins of Recognify
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        The first initiative focused on delivering <strong>cognitive behavioral therapy (CBT)</strong> through conversational agents designed to detect and address <strong>cognitive distortions</strong>—unhelpful thought patterns contributing to conditions like depression and anxiety. This project emerged in response to the <strong>long waiting lists for professional therapy</strong>, with many individuals in the Netherlands waiting over a year for mental health support.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        The second initiative aimed to foster <strong>self-actualization</strong> through AI-driven coaching, grounded in <strong>positive psychology and goal-striving theories</strong>. This system helped young adults explore their values, find purpose, and achieve meaningful personal goals. A <strong>30-day scientific study</strong> demonstrated its effectiveness in improving a wide range of psychological outcomes.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        The third initiative leveraged <strong>machine learning and advanced data analytics</strong> to enhance the adaptability of conversational agents. By recognizing each user’s unique psychological traits, the project sought to create a <strong>personalized and more effective</strong> digital mental health experience.
+      </p>
+
+      <h2 class="font-bold text-3xl text-gray-800">
+        What Makes Recognify Unique?
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Recognify stands at the intersection of <strong>psychology, neuroscience, and artificial intelligence</strong>, offering an approach that is <strong>deeply personalized</strong>. Unlike conventional self-help apps or mental health chatbots that apply a one-size-fits-all method, Recognify <strong>adapts to the individual</strong>, considering their unique goals, challenges, and psychological makeup. Whether someone wants to minimize negative thoughts, gain emotional control, discover purpose, overcome self-doubt, or achieve career ambitions, Recognify provides <strong>tailored guidance</strong> that evolves with them.
+      </p>
+
+      <h2 class="font-bold text-3xl text-gray-800">
+        A Personalized Path to Success
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        People differ widely in their <strong>desires, circumstances, and psychological needs</strong>, yet most mental health tools fail to acknowledge these differences. Recognify takes the opposite approach: instead of fitting the individual to the process, <strong>Recognify fits the process to the individual</strong>.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        One person may struggle with anxiety and seek relief from overwhelming thoughts, while another may feel lost and need clarity on their purpose in life. Someone else may want to break free from fear of rejection, while another dreams of career success and financial stability. Recognify recognizes these differences and <strong>adapts accordingly</strong>.
+      </p>
+
+      <h2 class="font-bold text-3xl text-gray-800">
+        The Science of Achieving Dreams
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Every ambition—whether personal growth, emotional resilience, or professional success—can be broken down into <strong>small, actionable steps</strong>. However, this process requires more than just setting goals. It involves understanding the deeper motivations behind one’s aspirations, identifying and overcoming mental and emotional barriers, and staying <strong>motivated, engaged, and self-aware</strong> throughout the journey.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Many people unknowingly pursue goals that don’t align with their true values, leading to frustration or burnout. Recognify helps individuals <strong>define what truly matters</strong>, break down aspirations into <strong>achievable milestones</strong>, and build <strong>momentum toward lasting success</strong>.
+      </p>
+
+      <h2 class="font-bold text-3xl text-gray-800">
+        The Greatness Garden
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Recognify’s <strong>Greatness Garden</strong> is a unique, interactive way to track progress. Personal goals, steps, challenges, and achievements are visually mapped out in a symbolic landscape—transforming each journey into an engaging and meaningful experience. This dynamic system helps individuals set and refine aspirations, break them into structured, achievable steps, gain insights into mental processes, overcome obstacles with personalized strategies, and stay motivated by watching their progress unfold.
+      </p>
+      <p class="text-lg leading-relaxed text-slate-500">
+        At Recognify, we believe that <strong>personal growth is not a rigid process—it’s an evolving journey</strong>. By combining cutting-edge science with a deeply human approach, Recognify empowers individuals to <strong>flourish, thrive, and become the best version of themselves</strong>.
+      </p>
+
+    </div>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
-        Meet our team
+        Meet Our Team
       </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-      </p>
     </div>
+
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
@@ -36,7 +96,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                 sizes="(max-width: 800px) 100vw, 400px"
                 width={400}
                 height={400}
-                class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
+                class="w-full rounded-md transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
               />
             </div>
 
