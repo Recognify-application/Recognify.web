@@ -1,0 +1,27 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Conversational AI">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Conversational AI</Fragment>
+      <Fragment slot="desc">How AI-powered conversations help improve mental health and self-actualization.</Fragment>
+    </Sectionhead>
+    
+    <div class="max-w-4xl mx-auto mt-8">
+      <h2 class="text-3xl font-bold text-gray-800">The Role of AI in Therapy</h2>
+      <p class="text-lg text-slate-600 leading-relaxed mt-4">
+        Conversational AI is revolutionizing mental health by providing instant, 24/7 support through natural conversations. 
+        Recognify's AI detects cognitive distortions, helps restructure negative thoughts, and provides guided exercises to promote well-being.
+      </p>
+      
+      <h2 class="text-3xl font-bold text-gray-800 mt-8">Personalized AI Guidance</h2>
+      <p class="text-lg text-slate-600 leading-relaxed mt-4">
+        Unlike traditional chatbots, Recognify’s AI adapts to each user’s emotional state, learning patterns over time to offer more tailored and effective guidance.
+      </p>
+    </div>
+  </Container>
+</Layout>
