@@ -5,6 +5,9 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 
+<pre>{JSON.stringify(import.meta.glob('/src/pages/**'), null, 2)}</pre>
+
+
 // Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
