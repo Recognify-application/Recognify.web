@@ -4,11 +4,13 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 ---
 
+
 <Layout title="Features">
   <Container>
-    <Sectionhead title="Features" desc="Explore Recognify's core functionalities designed to enhance well-being, personal growth, and privacy." />
-
-    <div class="max-w-4xl mx-auto mt-8 space-y-12">
+    <Sectionhead>
+      <Fragment slot="title">Features</Fragment>
+      <Fragment slot="desc"></Fragment>
+    </Sectionhead>
 
       <section>
         <h2 class="text-3xl font-bold text-gray-800">Conversational AI</h2>
